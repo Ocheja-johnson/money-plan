@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src https://api.github.com https://api.anthropic.com; frame-src 'none'; object-src 'none'; base-uri 'self'">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#EDEFEA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1012" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Johnson's money plan: the monthly split, goals, debts, investments and a money coach.">
+<title>Money Plan</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="top-row">
+      <div class="brand"><h1>Money Plan</h1><a class="status" id="status" href="#more" aria-live="polite" title="Syncing, your phone, backups"></a></div>
+      <div class="addwrap">
+        <button type="button" class="btn sm primary" id="addbtn" aria-haspopup="true" aria-expanded="false" aria-controls="addmenu">+ Add</button>
+        <div class="addmenu" id="addmenu" hidden>
+          <button type="button" data-act="add-goal"><b>Something to buy or save for</b><span>A goal, like panels or a car</span></button>
+          <button type="button" data-act="add-pot"><b>School fees, rent or family support</b><span>Saved for monthly, paid when it&rsquo;s due</span></button>
+          <button type="button" data-act="add-debt"><b>Money you owe</b><span>A loan, or money taken from one of your pots</span></button>
+          <button type="button" data-act="add-inc"><b>Money that came in</b><span>Log income for this month</span></button>
+        </div>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <a href="#month" data-v="month">Month</a>
+      <a href="#coach" data-v="coach">Coach</a>
+      <a href="#goals" data-v="goals">Goals</a>
+      <a href="#debts" data-v="debts">Debts</a>
+      <a href="#invest" data-v="invest">Invest</a>
+      <a href="#history" data-v="history">History</a>
+      <a href="#plan" data-v="plan">Plan</a>
+      <a href="#more" data-v="more">More</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="card" style="gap:10px"><div class="skel" style="width:40%"></div><div class="skel" style="width:70%;height:36px"></div><div class="skel"></div></section>
+    <p class="muted small">Loading your plan&hellip;</p>
+  </main>
+</div>
+<div id="tip" role="tooltip"></div>
+
+
+<script src="register-sw.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
