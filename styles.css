@@ -327,3 +327,18 @@ input[type=password]:focus-visible{outline:2px solid var(--accent);outline-offse
 @media (max-width:370px){
   .tabs a{padding-inline:3px;font-size:12px}
 }
+/* Payday on the Month tab, and Where your money comes from in Plan (1.0.3). */
+.payin{display:flex;gap:6px;align-items:center;flex:none}
+.payin .cur{font-weight:600;color:var(--muted);min-width:10px;text-align:right}
+.payin input[type=text]{width:132px;height:36px}
+.pay-row.made{background:var(--surface-2)}
+.pay-row .chip{flex:none}
+.add-src{display:flex;gap:8px;margin-top:8px}
+.add-src input[type=text]{flex:1}
+.chk{display:inline-flex;gap:6px;align-items:center;color:var(--ink-2);cursor:pointer}
+@media (max-width:560px){
+  .pay-row.ask{flex-wrap:wrap}
+  .pay-row.ask .main{flex:1 1 100%}
+  .pay-row.ask .payin{flex:1 1 100%}
+  .pay-row.ask .payin input[type=text]{flex:1;width:auto}
+}
