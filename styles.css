@@ -357,3 +357,18 @@ input[type=password]:focus-visible{outline:2px solid var(--accent);outline-offse
 .tstages{display:flex;flex-direction:column;gap:8px}
 @media (max-width:420px){.tabs a{padding:10px 2.5px 11px;font-size:12px}}
 @media (max-width:370px){.tabs a{font-size:11.5px}}
+/* Recommend (1.0.6) */
+.recrow{gap:10px;align-items:center}
+.recamt{display:flex;align-items:center;gap:6px;flex:none}
+.recamt .cur{font-weight:600;color:var(--muted)}
+.recamt input[type=text]{width:118px;height:36px;text-align:right}
+.recamt .chip{flex:none}
+button.chip{cursor:pointer;font:inherit;font-size:12px}
+@media (max-width:560px){
+  .recrow{flex-wrap:wrap}
+  .recrow .main{flex:1 1 100%}
+  .recamt{flex:1 1 100%;justify-content:flex-end}
+}
+.tabs.scrolls{-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}
+.group-label .tickall{margin-left:auto;text-transform:none;letter-spacing:0;font-size:13px;font-weight:600}
+.tickall-row{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 6px}
