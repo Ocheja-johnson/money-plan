@@ -372,3 +372,14 @@ button.chip{cursor:pointer;font:inherit;font-size:12px}
 .tabs.scrolls{-webkit-mask-image:linear-gradient(to right,#000 88%,transparent);mask-image:linear-gradient(to right,#000 88%,transparent)}
 .group-label .tickall{margin-left:auto;text-transform:none;letter-spacing:0;font-size:13px;font-weight:600}
 .tickall-row{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 6px}
+/* Recommend: what I'd change, and his own plan's amount under a line (1.0.8) */
+.advrow{align-items:flex-start;gap:10px}
+.advrow .lv{flex:none;padding-top:2px}
+.advrow .main .s{color:var(--ink);font-size:14px;line-height:1.45}
+.advrow .btns{margin-top:8px}
+.recplan{font-style:normal;opacity:.85}
+/* To do: money put towards a goal (1.0.8) */
+.tmoney{display:flex;flex-direction:column}
+.tents{display:flex;flex-direction:column;gap:4px}
+.tent{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:var(--ink-2);padding:4px 0;border-top:1px solid var(--line)}
+.tent:first-child{border-top:0}

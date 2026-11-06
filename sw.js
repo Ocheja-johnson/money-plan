@@ -1,7 +1,7 @@
 // Money Plan phone app: opens offline and updates itself. Your numbers never go through
 // here; they go straight between the app and your private GitHub space.
 // Only caches named money-plan-* are touched, so Back Catalog (same github.io address) is safe.
-const VERSION = '1.0.7-f4ec9e26';
+const VERSION = '1.0.8-34f4bc33';
 const CACHE = 'money-plan-' + VERSION;
 const FILES = ["./","app.js","fonts/schibsted-grotesk-latin-400-normal.woff2","fonts/schibsted-grotesk-latin-500-normal.woff2","fonts/schibsted-grotesk-latin-600-normal.woff2","fonts/schibsted-grotesk-latin-700-normal.woff2","fonts/schibsted-grotesk-latin-ext-400-normal.woff2","fonts/schibsted-grotesk-latin-ext-500-normal.woff2","fonts/schibsted-grotesk-latin-ext-600-normal.woff2","fonts/schibsted-grotesk-latin-ext-700-normal.woff2","fonts/young-serif-latin-400-normal.woff2","fonts/young-serif-latin-ext-400-normal.woff2","icons/apple-touch-icon.png","icons/favicon-64.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","index.html","manifest.webmanifest","register-sw.js","styles.css"];
 self.addEventListener('install', (e) => {
